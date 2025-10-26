@@ -31,7 +31,7 @@ const Features = () => {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-white to-blue-50/40" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Built for Focused Learning</h2>
+          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Why Students Choose MBC</h2>
           <p className="mx-auto mt-3 max-w-2xl text-gray-600">A modern toolkit crafted for JEE & NEET success.</p>
         </div>
 

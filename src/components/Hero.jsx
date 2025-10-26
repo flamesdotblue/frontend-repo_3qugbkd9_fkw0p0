@@ -4,13 +4,15 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-white text-gray-900">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#0b0b12] text-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
+          scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/40 to-white/90" />
+        {/* Subtle color wash to blend edges with the page background. Does not block interactions. */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#0b0b12]/20 to-[#0b0b12]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.18),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(59,130,246,0.18),transparent_35%)]" />
       </div>
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center">
@@ -20,29 +22,32 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <p className="text-sm tracking-[0.3em] text-gray-600">Innovision Academy</p>
-          <h1 className="font-semibold leading-tight text-gray-900" style={{ fontFamily: 'Inter, ui-sans-serif, system-ui' }}>
+          <p className="text-xs tracking-[0.3em] text-white/70">MBC — MRIDUL BHAIYA CLASSES</p>
+          <h1
+            className="font-semibold leading-tight"
+            style={{ fontFamily: 'Inter, ui-sans-serif, system-ui' }}
+          >
             <span className="block text-4xl sm:text-5xl md:text-6xl">
-              Empowering the Next Generation of Innovators.
+              Crack JEE & NEET with a Futuristic Learning Experience.
             </span>
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-gray-700 sm:text-lg">
-            India’s Most Futuristic Learning Platform for JEE & NEET Aspirants.
+          <p className="mx-auto max-w-2xl text-base text-white/80 sm:text-lg">
+            Precision teaching. Interactive 3D visuals. Data-driven prep engineered for ranks.
           </p>
 
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#courses"
-              className="group inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-white shadow-lg shadow-gray-900/10 transition hover:-translate-y-0.5 hover:bg-gray-800"
+              className="group inline-flex items-center rounded-full bg-white px-6 py-3 text-gray-900 shadow-lg shadow-white/10 transition hover:-translate-y-0.5 hover:bg-white/90"
             >
-              Join Now
+              Explore Batches
               <span className="ml-2 transition group-hover:translate-x-0.5">→</span>
             </a>
             <a
-              href="#features"
-              className="inline-flex items-center rounded-full bg-white/70 px-6 py-3 text-gray-900 ring-1 ring-gray-200 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              href="#app"
+              className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-white ring-1 ring-white/20 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/15"
             >
-              Explore Courses
+              Get the App
             </a>
           </div>
         </motion.div>
@@ -53,10 +58,10 @@ const Hero = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="absolute bottom-6 left-1/2 -translate-x-1/2"
         >
-          <div className="flex flex-col items-center text-gray-600">
+          <div className="flex flex-col items-center text-white/70">
             <span className="text-xs uppercase tracking-widest">Scroll to discover</span>
-            <span className="mt-2 inline-flex h-9 w-5 items-start justify-center rounded-full border border-gray-300">
-              <span className="mt-1 block h-2 w-1.5 animate-bounce rounded-full bg-gray-600" />
+            <span className="mt-2 inline-flex h-9 w-5 items-start justify-center rounded-full border border-white/30">
+              <span className="mt-1 block h-2 w-1.5 animate-bounce rounded-full bg-white/80" />
             </span>
           </div>
         </motion.div>
